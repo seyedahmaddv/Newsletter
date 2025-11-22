@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>خبرنامه</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: "Vazirmatn", system-ui, sans-serif;
+      margin: 0; padding: 0;
+      background: #0f172a; color: #e2e8f0;
+      display: grid; place-items: center; min-height: 100vh;
+    }
+    .card {
+      width: min(680px, 92vw);
+      background: #0b1220;
+      border: 1px solid rgba(148,163,184,.18);
+      border-radius: 16px; padding: 28px;
+      box-shadow: 0 20px 40px rgba(2,6,23,.35);
+    }
+    .title { font-size: 1.6rem; font-weight: 600; margin: 0 0 8px; }
+    .desc { margin: 0 0 20px; color: #94a3b8; line-height: 1.7; }
+    /* MailerLite container adjustment */
+    .ml-form-embedContainer {
+      margin-top: 10px;
+    }
+    /* Optional: style inputs if using HTML embed variant */
+    .newsletter input[type="email"] {
+      width: 100%; padding: 12px 14px; border-radius: 10px;
+      border: 1px solid rgba(148,163,184,.28); background: #0a0f1f; color: #e2e8f0;
+    }
+    .newsletter button {
+      margin-top: 10px; width: 100%; padding: 12px 14px; border-radius: 10px;
+      background: #22c55e; color: #052814; font-weight: 600; border: none; cursor: pointer;
+    }
+    .newsletter button:hover { background: #16a34a; }
+    footer { margin-top: 18px; font-size: .85rem; color: #64748b; text-align: center; }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1 class="title">خبرنامه هفتگی</h1>
+    <p class="desc">اگر دوست داری لب خبرها را در یک فنجان کوتاه بخوانی، ایمیلت را بنویس.</p>
+
+    <!-- اینجا کد Embed فرم MailerLite را بچسبان -->
+    <!-- Example: Script Embed (جایگزین کن با کد واقعی MailerLite) -->
+    <!--
+    <script>
+      (function(m,a,i,l,e,r){ /* ... MailerLite embed script ... */ })(window, document, ...);
+    </script>
+    <div class="ml-form-embedContainer ml-subscribe-form-XXXXXX"></div>
+    -->
+
+    <!-- یا اگر HTML Embed دادی، می‌تونی کلاس newsletter را نگه داری تا استایل‌ها اعمال شوند -->
+    <!--
+    <form class="newsletter" action="https://assets.mailerlite.com/jsonp/XXXX/subscribe" data-code="XXXX" method="post">
+      <input type="email" name="email" placeholder="email@example.com" required />
+      <button type="submit">عضو شو</button>
+    </form>
+    -->
+
+    <footer>با احترام به سکوت ایمیل‌ها و حق انتخاب تو.</footer>
+  </main>
+</body>
+</html>
